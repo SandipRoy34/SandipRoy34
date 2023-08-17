@@ -1,0 +1,6 @@
+def myfun():
+    list=[6,7,9,5,4]
+    
+    print(sum(list))
+    
+myfun()
