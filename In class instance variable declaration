@@ -1,0 +1,9 @@
+class mobile:
+    def __init__(self):
+        self.anything='What the hell'#instance variable declaration
+        
+        def mymethod(self):#accesing instance variable
+            print(self.anything)
+            
+obj=mobile()
+print(obj.anything)
