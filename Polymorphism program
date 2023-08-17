@@ -1,0 +1,17 @@
+class polymorphisom:
+    def inf(self,n):
+        self.name=n
+        print('Your name is',self.name)
+        
+        
+class polymorphisom2:#this is polymorphisom.The many chartarstics of a function
+        def inf(self,n,a):
+            self.name=n
+            self.age=a
+            print('your name is',self.name)
+            print('your name is',self.age)
+            
+obj1= polymorphisom()
+obj1.inf('sandip')
+obj2=polymorphisom2()
+obj2.inf('sandip2',20)
