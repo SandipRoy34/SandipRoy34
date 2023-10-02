@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML, CSS, and JavaScript Example</title>
+    <style>
+        /* CSS styles */
+        .my-div {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="my-div">
+        This is a div element.
+    </div>
+
+    <button onclick="changeContent()">Change Content</button>
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="changeFontSize()">Change Font Size</button>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        // JavaScript functions
+        function changeContent() {
+            document.getElementById("myDiv").innerHTML = "Content changed!";
+        }
+
+        function changeImage() {
+            document.getElementById("myImage").src = "new-image.jpg";
+        }
+
+        function changeFontSize() {
+            document.getElementById("myDiv").style.fontSize = "24px";
+        }
+
+        function toggleVisibility() {
+            var myDiv = document.getElementById("myDiv");
+            if (myDiv.style.display === "none") {
+                myDiv.style.display = "block";
+            } else {
+                myDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
